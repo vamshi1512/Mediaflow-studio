@@ -1,0 +1,43 @@
+{
+  "name": "low-buffer-failure",
+  "description": "Small fixed playout delay intentionally fails under jitter to show buffer tradeoffs.",
+  "durationMs": 10000,
+  "seed": 42,
+  "sampleIntervalMs": 100,
+  "audioStream": {
+    "enabled": true,
+    "streamId": "audio-main",
+    "mediaType": "audio",
+    "frameIntervalMs": 20,
+    "framePayloadBytes": 240,
+    "packetsPerFrame": 1
+  },
+  "videoStream": {
+    "enabled": true,
+    "streamId": "video-main",
+    "mediaType": "video",
+    "frameIntervalMs": 33,
+    "framePayloadBytes": 8400,
+    "packetsPerFrame": 7
+  },
+  "network": {
+    "baseLatencyMs": 38,
+    "jitterMs": 35,
+    "packetLossRate": 0.0,
+    "burstLossTriggerRate": 0.0,
+    "burstLossLength": 0,
+    "reorderRate": 0.0,
+    "reorderHoldMs": 0,
+    "bandwidthKbps": 2500,
+    "queueCapacityPackets": 300,
+    "queuePressureDropThresholdMs": 360
+  },
+  "jitterBuffer": {
+    "targetDelayMs": 45,
+    "minDelayMs": 40,
+    "maxDelayMs": 120,
+    "maxPackets": 640,
+    "adaptive": false,
+    "startBufferFrames": 1
+  }
+}

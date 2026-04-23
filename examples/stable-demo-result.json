@@ -1,0 +1,3150 @@
+{
+  "bufferStrategy": "fixed",
+  "config": {
+    "audioStream": {
+      "enabled": true,
+      "frameIntervalMs": 20,
+      "framePayloadBytes": 240,
+      "mediaType": "audio",
+      "packetsPerFrame": 1,
+      "streamId": "audio-main"
+    },
+    "description": "Balanced audio/video path with low impairment and predictable playout.",
+    "durationMs": 10000,
+    "jitterBuffer": {
+      "adaptive": false,
+      "maxDelayMs": 260,
+      "maxPackets": 640,
+      "minDelayMs": 50,
+      "startBufferFrames": 2,
+      "targetDelayMs": 90
+    },
+    "name": "stable",
+    "network": {
+      "bandwidthKbps": 2500,
+      "baseLatencyMs": 38,
+      "burstLossLength": 0,
+      "burstLossTriggerRate": 0.0,
+      "jitterMs": 2,
+      "packetLossRate": 0.0,
+      "queueCapacityPackets": 300,
+      "queuePressureDropThresholdMs": 360,
+      "reorderHoldMs": 0,
+      "reorderRate": 0.0
+    },
+    "sampleIntervalMs": 100,
+    "seed": 42,
+    "videoStream": {
+      "enabled": true,
+      "frameIntervalMs": 33,
+      "framePayloadBytes": 8400,
+      "mediaType": "video",
+      "packetsPerFrame": 7,
+      "streamId": "video-main"
+    }
+  },
+  "durationMs": 10000,
+  "exportedAtMs": 11660,
+  "final": true,
+  "recentEvents": [
+    {
+      "frameId": null,
+      "kind": "simulation-started",
+      "message": "Simulation started",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "",
+      "timeMs": 0
+    },
+    {
+      "frameId": 11,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 11",
+      "packetId": 60,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 264
+    },
+    {
+      "frameId": 10,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 59,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 265
+    },
+    {
+      "frameId": 16,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 16",
+      "packetId": 86,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 363
+    },
+    {
+      "frameId": 15,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 85,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 365
+    },
+    {
+      "frameId": 21,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 21",
+      "packetId": 112,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 463
+    },
+    {
+      "frameId": 20,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 111,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 465
+    },
+    {
+      "frameId": 44,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 44",
+      "packetId": 233,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 925
+    },
+    {
+      "frameId": 43,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 232,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 926
+    },
+    {
+      "frameId": 46,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 46",
+      "packetId": 242,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 959
+    },
+    {
+      "frameId": 45,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 241,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 960
+    },
+    {
+      "frameId": 51,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 51",
+      "packetId": 268,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 1057
+    },
+    {
+      "frameId": 50,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 267,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 1059
+    },
+    {
+      "frameId": 79,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 79",
+      "packetId": 415,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 1617
+    },
+    {
+      "frameId": 78,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 414,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 1618
+    },
+    {
+      "frameId": 105,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 105",
+      "packetId": 553,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2146
+    },
+    {
+      "frameId": 104,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 552,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2147
+    },
+    {
+      "frameId": 110,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 110",
+      "packetId": 579,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2244
+    },
+    {
+      "frameId": 109,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 578,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2247
+    },
+    {
+      "frameId": 115,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 115",
+      "packetId": 605,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2343
+    },
+    {
+      "frameId": 114,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 604,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2346
+    },
+    {
+      "frameId": 120,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 120",
+      "packetId": 631,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2443
+    },
+    {
+      "frameId": 119,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 630,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2444
+    },
+    {
+      "frameId": 130,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 130",
+      "packetId": 683,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2642
+    },
+    {
+      "frameId": 129,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 682,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2643
+    },
+    {
+      "frameId": 135,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 135",
+      "packetId": 709,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2740
+    },
+    {
+      "frameId": 134,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 708,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 2741
+    },
+    {
+      "frameId": 153,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 153",
+      "packetId": 804,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3103
+    },
+    {
+      "frameId": 152,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 803,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3105
+    },
+    {
+      "frameId": 158,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 158",
+      "packetId": 830,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3201
+    },
+    {
+      "frameId": 157,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 829,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3202
+    },
+    {
+      "frameId": 171,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 171",
+      "packetId": 899,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3466
+    },
+    {
+      "frameId": 170,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 898,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3467
+    },
+    {
+      "frameId": 176,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 176",
+      "packetId": 925,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3564
+    },
+    {
+      "frameId": 175,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 924,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3567
+    },
+    {
+      "frameId": 191,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 191",
+      "packetId": 1003,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3862
+    },
+    {
+      "frameId": 190,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1002,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 3864
+    },
+    {
+      "frameId": 224,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 224",
+      "packetId": 1176,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4522
+    },
+    {
+      "frameId": 223,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1175,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4524
+    },
+    {
+      "frameId": 229,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 229",
+      "packetId": 1202,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4621
+    },
+    {
+      "frameId": 228,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1201,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4623
+    },
+    {
+      "frameId": 244,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 244",
+      "packetId": 1280,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4918
+    },
+    {
+      "frameId": 243,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1279,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 4919
+    },
+    {
+      "frameId": 249,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 249",
+      "packetId": 1306,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5018
+    },
+    {
+      "frameId": 248,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1305,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5019
+    },
+    {
+      "frameId": 257,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 257",
+      "packetId": 1349,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5182
+    },
+    {
+      "frameId": 256,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1348,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5183
+    },
+    {
+      "frameId": 272,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 272",
+      "packetId": 1427,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5478
+    },
+    {
+      "frameId": 271,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1426,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5480
+    },
+    {
+      "frameId": 280,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 280",
+      "packetId": 1470,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5643
+    },
+    {
+      "frameId": 279,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1469,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 5645
+    },
+    {
+      "frameId": 300,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 300",
+      "packetId": 1574,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6041
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1573,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6042
+    },
+    {
+      "frameId": 313,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 313",
+      "packetId": 1643,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6304
+    },
+    {
+      "frameId": 312,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1642,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6305
+    },
+    {
+      "frameId": 341,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 341",
+      "packetId": 1790,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6865
+    },
+    {
+      "frameId": 340,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1789,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 6866
+    },
+    {
+      "frameId": 361,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 361",
+      "packetId": 1894,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7261
+    },
+    {
+      "frameId": 360,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1893,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7262
+    },
+    {
+      "frameId": 366,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 366",
+      "packetId": 1920,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7361
+    },
+    {
+      "frameId": 365,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1919,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7362
+    },
+    {
+      "frameId": 379,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 379",
+      "packetId": 1989,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7623
+    },
+    {
+      "frameId": 378,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 1988,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 7624
+    },
+    {
+      "frameId": 404,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 404",
+      "packetId": 2119,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8120
+    },
+    {
+      "frameId": 403,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2118,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8121
+    },
+    {
+      "frameId": 409,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 409",
+      "packetId": 2145,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8217
+    },
+    {
+      "frameId": 408,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2144,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8218
+    },
+    {
+      "frameId": 414,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 414",
+      "packetId": 2171,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8317
+    },
+    {
+      "frameId": 413,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2170,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8318
+    },
+    {
+      "frameId": 422,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 422",
+      "packetId": 2214,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8481
+    },
+    {
+      "frameId": 421,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2213,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8483
+    },
+    {
+      "frameId": 437,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 437",
+      "packetId": 2292,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8780
+    },
+    {
+      "frameId": 436,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2291,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8781
+    },
+    {
+      "frameId": 445,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 445",
+      "packetId": 2335,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8945
+    },
+    {
+      "frameId": 444,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2334,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 8946
+    },
+    {
+      "frameId": 493,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 493",
+      "packetId": 2586,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9900
+    },
+    {
+      "frameId": 492,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2585,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9903
+    },
+    {
+      "frameId": null,
+      "kind": "simulation-complete",
+      "message": "Simulation completed",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "",
+      "timeMs": 11660
+    }
+  ],
+  "scenarioDescription": "Balanced audio/video path with low impairment and predictable playout.",
+  "scenarioName": "stable",
+  "seed": 42,
+  "series": {
+    "bufferOccupancyPackets": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 18.0
+      },
+      {
+        "timeMs": 200,
+        "value": 34.0
+      },
+      {
+        "timeMs": 300,
+        "value": 27.0
+      },
+      {
+        "timeMs": 400,
+        "value": 27.0
+      },
+      {
+        "timeMs": 500,
+        "value": 27.0
+      },
+      {
+        "timeMs": 600,
+        "value": 27.0
+      },
+      {
+        "timeMs": 700,
+        "value": 27.0
+      },
+      {
+        "timeMs": 800,
+        "value": 26.0
+      },
+      {
+        "timeMs": 900,
+        "value": 27.0
+      },
+      {
+        "timeMs": 1000,
+        "value": 27.0
+      },
+      {
+        "timeMs": 1100,
+        "value": 28.0
+      },
+      {
+        "timeMs": 1200,
+        "value": 28.0
+      },
+      {
+        "timeMs": 1300,
+        "value": 28.0
+      },
+      {
+        "timeMs": 1400,
+        "value": 28.0
+      },
+      {
+        "timeMs": 1500,
+        "value": 28.0
+      },
+      {
+        "timeMs": 1600,
+        "value": 29.0
+      },
+      {
+        "timeMs": 1700,
+        "value": 29.0
+      },
+      {
+        "timeMs": 1800,
+        "value": 29.0
+      },
+      {
+        "timeMs": 1900,
+        "value": 29.0
+      },
+      {
+        "timeMs": 2000,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2100,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2200,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2300,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2400,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2500,
+        "value": 30.0
+      },
+      {
+        "timeMs": 2600,
+        "value": 31.0
+      },
+      {
+        "timeMs": 2700,
+        "value": 31.0
+      },
+      {
+        "timeMs": 2800,
+        "value": 31.0
+      },
+      {
+        "timeMs": 2900,
+        "value": 31.0
+      },
+      {
+        "timeMs": 3000,
+        "value": 31.0
+      },
+      {
+        "timeMs": 3100,
+        "value": 31.0
+      },
+      {
+        "timeMs": 3200,
+        "value": 31.0
+      },
+      {
+        "timeMs": 3300,
+        "value": 32.0
+      },
+      {
+        "timeMs": 3400,
+        "value": 33.0
+      },
+      {
+        "timeMs": 3500,
+        "value": 33.0
+      },
+      {
+        "timeMs": 3600,
+        "value": 27.0
+      },
+      {
+        "timeMs": 3700,
+        "value": 27.0
+      },
+      {
+        "timeMs": 3800,
+        "value": 27.0
+      },
+      {
+        "timeMs": 3900,
+        "value": 27.0
+      },
+      {
+        "timeMs": 4000,
+        "value": 27.0
+      },
+      {
+        "timeMs": 4100,
+        "value": 26.0
+      },
+      {
+        "timeMs": 4200,
+        "value": 27.0
+      },
+      {
+        "timeMs": 4300,
+        "value": 27.0
+      },
+      {
+        "timeMs": 4400,
+        "value": 27.0
+      },
+      {
+        "timeMs": 4500,
+        "value": 28.0
+      },
+      {
+        "timeMs": 4600,
+        "value": 28.0
+      },
+      {
+        "timeMs": 4700,
+        "value": 28.0
+      },
+      {
+        "timeMs": 4800,
+        "value": 28.0
+      },
+      {
+        "timeMs": 4900,
+        "value": 29.0
+      },
+      {
+        "timeMs": 5000,
+        "value": 28.0
+      },
+      {
+        "timeMs": 5100,
+        "value": 29.0
+      },
+      {
+        "timeMs": 5200,
+        "value": 29.0
+      },
+      {
+        "timeMs": 5300,
+        "value": 29.0
+      },
+      {
+        "timeMs": 5400,
+        "value": 29.0
+      },
+      {
+        "timeMs": 5500,
+        "value": 30.0
+      },
+      {
+        "timeMs": 5600,
+        "value": 30.0
+      },
+      {
+        "timeMs": 5700,
+        "value": 30.0
+      },
+      {
+        "timeMs": 5800,
+        "value": 30.0
+      },
+      {
+        "timeMs": 5900,
+        "value": 31.0
+      },
+      {
+        "timeMs": 6000,
+        "value": 31.0
+      },
+      {
+        "timeMs": 6100,
+        "value": 30.0
+      },
+      {
+        "timeMs": 6200,
+        "value": 31.0
+      },
+      {
+        "timeMs": 6300,
+        "value": 31.0
+      },
+      {
+        "timeMs": 6400,
+        "value": 31.0
+      },
+      {
+        "timeMs": 6500,
+        "value": 32.0
+      },
+      {
+        "timeMs": 6600,
+        "value": 32.0
+      },
+      {
+        "timeMs": 6700,
+        "value": 34.0
+      },
+      {
+        "timeMs": 6800,
+        "value": 32.0
+      },
+      {
+        "timeMs": 6900,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7000,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7100,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7200,
+        "value": 26.0
+      },
+      {
+        "timeMs": 7300,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7400,
+        "value": 26.0
+      },
+      {
+        "timeMs": 7500,
+        "value": 26.0
+      },
+      {
+        "timeMs": 7600,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7700,
+        "value": 27.0
+      },
+      {
+        "timeMs": 7800,
+        "value": 28.0
+      },
+      {
+        "timeMs": 7900,
+        "value": 28.0
+      },
+      {
+        "timeMs": 8000,
+        "value": 28.0
+      },
+      {
+        "timeMs": 8100,
+        "value": 28.0
+      },
+      {
+        "timeMs": 8200,
+        "value": 29.0
+      },
+      {
+        "timeMs": 8300,
+        "value": 28.0
+      },
+      {
+        "timeMs": 8400,
+        "value": 29.0
+      },
+      {
+        "timeMs": 8500,
+        "value": 29.0
+      },
+      {
+        "timeMs": 8600,
+        "value": 29.0
+      },
+      {
+        "timeMs": 8700,
+        "value": 30.0
+      },
+      {
+        "timeMs": 8800,
+        "value": 30.0
+      },
+      {
+        "timeMs": 8900,
+        "value": 30.0
+      },
+      {
+        "timeMs": 9000,
+        "value": 31.0
+      },
+      {
+        "timeMs": 9100,
+        "value": 30.0
+      },
+      {
+        "timeMs": 9200,
+        "value": 31.0
+      },
+      {
+        "timeMs": 9300,
+        "value": 31.0
+      },
+      {
+        "timeMs": 9400,
+        "value": 31.0
+      },
+      {
+        "timeMs": 9500,
+        "value": 30.0
+      },
+      {
+        "timeMs": 9600,
+        "value": 30.0
+      },
+      {
+        "timeMs": 9700,
+        "value": 31.0
+      },
+      {
+        "timeMs": 9800,
+        "value": 32.0
+      },
+      {
+        "timeMs": 9900,
+        "value": 33.0
+      },
+      {
+        "timeMs": 10000,
+        "value": 33.0
+      },
+      {
+        "timeMs": 10100,
+        "value": 23.0
+      },
+      {
+        "timeMs": 10200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11660,
+        "value": 0.0
+      }
+    ],
+    "jitterMs": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 5.244421653654113
+      },
+      {
+        "timeMs": 200,
+        "value": 7.3807710933223865
+      },
+      {
+        "timeMs": 300,
+        "value": 10.322685274807599
+      },
+      {
+        "timeMs": 400,
+        "value": 8.37283865698184
+      },
+      {
+        "timeMs": 500,
+        "value": 7.877656397196542
+      },
+      {
+        "timeMs": 600,
+        "value": 7.5265953987708105
+      },
+      {
+        "timeMs": 700,
+        "value": 7.418100248546772
+      },
+      {
+        "timeMs": 800,
+        "value": 6.426421750160823
+      },
+      {
+        "timeMs": 900,
+        "value": 7.551789115424532
+      },
+      {
+        "timeMs": 1000,
+        "value": 8.537679069569572
+      },
+      {
+        "timeMs": 1100,
+        "value": 7.663777986300259
+      },
+      {
+        "timeMs": 1200,
+        "value": 6.244340604916802
+      },
+      {
+        "timeMs": 1300,
+        "value": 6.186866164433186
+      },
+      {
+        "timeMs": 1400,
+        "value": 7.674125417425726
+      },
+      {
+        "timeMs": 1500,
+        "value": 8.390276382987672
+      },
+      {
+        "timeMs": 1600,
+        "value": 7.2309369996262935
+      },
+      {
+        "timeMs": 1700,
+        "value": 7.151036214978315
+      },
+      {
+        "timeMs": 1800,
+        "value": 7.360927354694943
+      },
+      {
+        "timeMs": 1900,
+        "value": 6.058080136854365
+      },
+      {
+        "timeMs": 2000,
+        "value": 6.342718379787421
+      },
+      {
+        "timeMs": 2100,
+        "value": 6.934370942633568
+      },
+      {
+        "timeMs": 2200,
+        "value": 6.780664118896794
+      },
+      {
+        "timeMs": 2300,
+        "value": 6.954715032733983
+      },
+      {
+        "timeMs": 2400,
+        "value": 7.945282047011703
+      },
+      {
+        "timeMs": 2500,
+        "value": 7.286081570915771
+      },
+      {
+        "timeMs": 2600,
+        "value": 6.780566855876132
+      },
+      {
+        "timeMs": 2700,
+        "value": 7.074062140924994
+      },
+      {
+        "timeMs": 2800,
+        "value": 7.355483634829361
+      },
+      {
+        "timeMs": 2900,
+        "value": 5.980757009738538
+      },
+      {
+        "timeMs": 3000,
+        "value": 6.041625954899279
+      },
+      {
+        "timeMs": 3100,
+        "value": 5.407405390943504
+      },
+      {
+        "timeMs": 3200,
+        "value": 6.775759483915765
+      },
+      {
+        "timeMs": 3300,
+        "value": 6.393062135090819
+      },
+      {
+        "timeMs": 3400,
+        "value": 6.027946715507561
+      },
+      {
+        "timeMs": 3500,
+        "value": 6.386659280787199
+      },
+      {
+        "timeMs": 3600,
+        "value": 7.737668772309594
+      },
+      {
+        "timeMs": 3700,
+        "value": 7.098783783333003
+      },
+      {
+        "timeMs": 3800,
+        "value": 6.623214697087782
+      },
+      {
+        "timeMs": 3900,
+        "value": 7.958956828852857
+      },
+      {
+        "timeMs": 4000,
+        "value": 6.693157410006813
+      },
+      {
+        "timeMs": 4100,
+        "value": 9.063241658307673
+      },
+      {
+        "timeMs": 4200,
+        "value": 7.433353132597164
+      },
+      {
+        "timeMs": 4300,
+        "value": 7.760114642493602
+      },
+      {
+        "timeMs": 4400,
+        "value": 6.724658091968317
+      },
+      {
+        "timeMs": 4500,
+        "value": 7.962132231654346
+      },
+      {
+        "timeMs": 4600,
+        "value": 7.262725191433811
+      },
+      {
+        "timeMs": 4700,
+        "value": 8.249915206688666
+      },
+      {
+        "timeMs": 4800,
+        "value": 6.716496028496533
+      },
+      {
+        "timeMs": 4900,
+        "value": 6.101590678511216
+      },
+      {
+        "timeMs": 5000,
+        "value": 6.947799287596664
+      },
+      {
+        "timeMs": 5100,
+        "value": 6.503487318883097
+      },
+      {
+        "timeMs": 5200,
+        "value": 7.602780499672673
+      },
+      {
+        "timeMs": 5300,
+        "value": 7.064136327354195
+      },
+      {
+        "timeMs": 5400,
+        "value": 8.920246159380877
+      },
+      {
+        "timeMs": 5500,
+        "value": 8.395173592317722
+      },
+      {
+        "timeMs": 5600,
+        "value": 6.095607954405964
+      },
+      {
+        "timeMs": 5700,
+        "value": 7.271646748255087
+      },
+      {
+        "timeMs": 5800,
+        "value": 5.88725539757288
+      },
+      {
+        "timeMs": 5900,
+        "value": 5.982481847040074
+      },
+      {
+        "timeMs": 6000,
+        "value": 6.046480059403699
+      },
+      {
+        "timeMs": 6100,
+        "value": 7.531141318672604
+      },
+      {
+        "timeMs": 6200,
+        "value": 5.966306746805149
+      },
+      {
+        "timeMs": 6300,
+        "value": 5.649037679212404
+      },
+      {
+        "timeMs": 6400,
+        "value": 5.928984717972129
+      },
+      {
+        "timeMs": 6500,
+        "value": 5.716272651885243
+      },
+      {
+        "timeMs": 6600,
+        "value": 5.398471278586944
+      },
+      {
+        "timeMs": 6700,
+        "value": 8.06079392160723
+      },
+      {
+        "timeMs": 6800,
+        "value": 6.164423951445146
+      },
+      {
+        "timeMs": 6900,
+        "value": 9.004127987638723
+      },
+      {
+        "timeMs": 7000,
+        "value": 6.678887813938788
+      },
+      {
+        "timeMs": 7100,
+        "value": 7.090144193786939
+      },
+      {
+        "timeMs": 7200,
+        "value": 5.855825642847457
+      },
+      {
+        "timeMs": 7300,
+        "value": 8.552470408312729
+      },
+      {
+        "timeMs": 7400,
+        "value": 8.584938204159457
+      },
+      {
+        "timeMs": 7500,
+        "value": 8.783237308567681
+      },
+      {
+        "timeMs": 7600,
+        "value": 7.024416107371007
+      },
+      {
+        "timeMs": 7700,
+        "value": 9.063809134575225
+      },
+      {
+        "timeMs": 7800,
+        "value": 6.632424384976202
+      },
+      {
+        "timeMs": 7900,
+        "value": 6.5108872340390835
+      },
+      {
+        "timeMs": 8000,
+        "value": 6.226238116123017
+      },
+      {
+        "timeMs": 8100,
+        "value": 5.5168878664981795
+      },
+      {
+        "timeMs": 8200,
+        "value": 7.016586407951704
+      },
+      {
+        "timeMs": 8300,
+        "value": 6.346138499190232
+      },
+      {
+        "timeMs": 8400,
+        "value": 6.336094160865892
+      },
+      {
+        "timeMs": 8500,
+        "value": 8.504317788660613
+      },
+      {
+        "timeMs": 8600,
+        "value": 5.834364519016437
+      },
+      {
+        "timeMs": 8700,
+        "value": 5.366750046539568
+      },
+      {
+        "timeMs": 8800,
+        "value": 7.2665600282798595
+      },
+      {
+        "timeMs": 8900,
+        "value": 6.183579512421203
+      },
+      {
+        "timeMs": 9000,
+        "value": 6.625256328551604
+      },
+      {
+        "timeMs": 9100,
+        "value": 6.720423711968889
+      },
+      {
+        "timeMs": 9200,
+        "value": 5.792378816791167
+      },
+      {
+        "timeMs": 9300,
+        "value": 5.537191431449789
+      },
+      {
+        "timeMs": 9400,
+        "value": 6.527381117889329
+      },
+      {
+        "timeMs": 9500,
+        "value": 6.694548505002551
+      },
+      {
+        "timeMs": 9600,
+        "value": 6.140523069201157
+      },
+      {
+        "timeMs": 9700,
+        "value": 5.2989798894309805
+      },
+      {
+        "timeMs": 9800,
+        "value": 6.555655711189291
+      },
+      {
+        "timeMs": 9900,
+        "value": 8.903480637536049
+      },
+      {
+        "timeMs": 10000,
+        "value": 7.88395191964177
+      },
+      {
+        "timeMs": 10100,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10200,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10300,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10400,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10500,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10600,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10700,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10800,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 10900,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11000,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11100,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11200,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11300,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11400,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11500,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11600,
+        "value": 6.236892372778668
+      },
+      {
+        "timeMs": 11660,
+        "value": 6.236892372778668
+      }
+    ],
+    "latencyMs": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 200,
+        "value": 152.25
+      },
+      {
+        "timeMs": 300,
+        "value": 155.0769230769231
+      },
+      {
+        "timeMs": 400,
+        "value": 155.00000000000003
+      },
+      {
+        "timeMs": 500,
+        "value": 154.9655172413793
+      },
+      {
+        "timeMs": 600,
+        "value": 154.94594594594597
+      },
+      {
+        "timeMs": 700,
+        "value": 154.93333333333334
+      },
+      {
+        "timeMs": 800,
+        "value": 154.92452830188682
+      },
+      {
+        "timeMs": 900,
+        "value": 154.91803278688528
+      },
+      {
+        "timeMs": 1000,
+        "value": 154.91304347826093
+      },
+      {
+        "timeMs": 1100,
+        "value": 154.909090909091
+      },
+      {
+        "timeMs": 1200,
+        "value": 154.90588235294123
+      },
+      {
+        "timeMs": 1300,
+        "value": 154.90322580645164
+      },
+      {
+        "timeMs": 1400,
+        "value": 154.90099009900993
+      },
+      {
+        "timeMs": 1500,
+        "value": 154.89908256880733
+      },
+      {
+        "timeMs": 1600,
+        "value": 154.8974358974359
+      },
+      {
+        "timeMs": 1700,
+        "value": 154.896
+      },
+      {
+        "timeMs": 1800,
+        "value": 154.89473684210526
+      },
+      {
+        "timeMs": 1900,
+        "value": 154.89361702127655
+      },
+      {
+        "timeMs": 2000,
+        "value": 154.89261744966436
+      },
+      {
+        "timeMs": 2100,
+        "value": 154.89171974522284
+      },
+      {
+        "timeMs": 2200,
+        "value": 154.89090909090902
+      },
+      {
+        "timeMs": 2300,
+        "value": 154.89017341040454
+      },
+      {
+        "timeMs": 2400,
+        "value": 154.88950276243082
+      },
+      {
+        "timeMs": 2500,
+        "value": 154.8888888888888
+      },
+      {
+        "timeMs": 2600,
+        "value": 154.88832487309637
+      },
+      {
+        "timeMs": 2700,
+        "value": 154.8878048780487
+      },
+      {
+        "timeMs": 2800,
+        "value": 154.88732394366195
+      },
+      {
+        "timeMs": 2900,
+        "value": 154.88687782805428
+      },
+      {
+        "timeMs": 3000,
+        "value": 154.88646288209603
+      },
+      {
+        "timeMs": 3100,
+        "value": 154.88607594936707
+      },
+      {
+        "timeMs": 3200,
+        "value": 154.88571428571424
+      },
+      {
+        "timeMs": 3300,
+        "value": 154.8853754940711
+      },
+      {
+        "timeMs": 3400,
+        "value": 154.88505747126433
+      },
+      {
+        "timeMs": 3500,
+        "value": 154.88475836431223
+      },
+      {
+        "timeMs": 3600,
+        "value": 154.93165467625897
+      },
+      {
+        "timeMs": 3700,
+        "value": 154.93006993006992
+      },
+      {
+        "timeMs": 3800,
+        "value": 154.92857142857142
+      },
+      {
+        "timeMs": 3900,
+        "value": 154.92715231788077
+      },
+      {
+        "timeMs": 4000,
+        "value": 154.92580645161289
+      },
+      {
+        "timeMs": 4100,
+        "value": 154.9245283018868
+      },
+      {
+        "timeMs": 4200,
+        "value": 154.9233128834356
+      },
+      {
+        "timeMs": 4300,
+        "value": 154.9221556886228
+      },
+      {
+        "timeMs": 4400,
+        "value": 154.92105263157893
+      },
+      {
+        "timeMs": 4500,
+        "value": 154.92
+      },
+      {
+        "timeMs": 4600,
+        "value": 154.91899441340775
+      },
+      {
+        "timeMs": 4700,
+        "value": 154.91803278688516
+      },
+      {
+        "timeMs": 4800,
+        "value": 154.91711229946515
+      },
+      {
+        "timeMs": 4900,
+        "value": 154.91623036649204
+      },
+      {
+        "timeMs": 5000,
+        "value": 154.9153846153845
+      },
+      {
+        "timeMs": 5100,
+        "value": 154.91457286432149
+      },
+      {
+        "timeMs": 5200,
+        "value": 154.91379310344817
+      },
+      {
+        "timeMs": 5300,
+        "value": 154.91304347826076
+      },
+      {
+        "timeMs": 5400,
+        "value": 154.9123222748814
+      },
+      {
+        "timeMs": 5500,
+        "value": 154.91162790697663
+      },
+      {
+        "timeMs": 5600,
+        "value": 154.9109589041095
+      },
+      {
+        "timeMs": 5700,
+        "value": 154.9103139013452
+      },
+      {
+        "timeMs": 5800,
+        "value": 154.90969162995586
+      },
+      {
+        "timeMs": 5900,
+        "value": 154.90909090909085
+      },
+      {
+        "timeMs": 6000,
+        "value": 154.9085106382978
+      },
+      {
+        "timeMs": 6100,
+        "value": 154.90794979079487
+      },
+      {
+        "timeMs": 6200,
+        "value": 154.90740740740733
+      },
+      {
+        "timeMs": 6300,
+        "value": 154.90688259109308
+      },
+      {
+        "timeMs": 6400,
+        "value": 154.90637450199202
+      },
+      {
+        "timeMs": 6500,
+        "value": 154.90588235294118
+      },
+      {
+        "timeMs": 6600,
+        "value": 154.9054054054054
+      },
+      {
+        "timeMs": 6700,
+        "value": 154.9049429657795
+      },
+      {
+        "timeMs": 6800,
+        "value": 154.9044943820225
+      },
+      {
+        "timeMs": 6900,
+        "value": 154.92817679558019
+      },
+      {
+        "timeMs": 7000,
+        "value": 154.92740471869337
+      },
+      {
+        "timeMs": 7100,
+        "value": 154.92665474060834
+      },
+      {
+        "timeMs": 7200,
+        "value": 154.92592592592604
+      },
+      {
+        "timeMs": 7300,
+        "value": 154.92521739130444
+      },
+      {
+        "timeMs": 7400,
+        "value": 154.9245283018869
+      },
+      {
+        "timeMs": 7500,
+        "value": 154.92385786802043
+      },
+      {
+        "timeMs": 7600,
+        "value": 154.92320534223722
+      },
+      {
+        "timeMs": 7700,
+        "value": 154.92257001647462
+      },
+      {
+        "timeMs": 7800,
+        "value": 154.92195121951235
+      },
+      {
+        "timeMs": 7900,
+        "value": 154.9213483146069
+      },
+      {
+        "timeMs": 8000,
+        "value": 154.920760697306
+      },
+      {
+        "timeMs": 8100,
+        "value": 154.92018779342737
+      },
+      {
+        "timeMs": 8200,
+        "value": 154.91962905718717
+      },
+      {
+        "timeMs": 8300,
+        "value": 154.9190839694658
+      },
+      {
+        "timeMs": 8400,
+        "value": 154.91855203619923
+      },
+      {
+        "timeMs": 8500,
+        "value": 154.91803278688536
+      },
+      {
+        "timeMs": 8600,
+        "value": 154.917525773196
+      },
+      {
+        "timeMs": 8700,
+        "value": 154.9170305676857
+      },
+      {
+        "timeMs": 8800,
+        "value": 154.91654676259006
+      },
+      {
+        "timeMs": 8900,
+        "value": 154.91607396870566
+      },
+      {
+        "timeMs": 9000,
+        "value": 154.91561181434608
+      },
+      {
+        "timeMs": 9100,
+        "value": 154.91515994436725
+      },
+      {
+        "timeMs": 9200,
+        "value": 154.91471801925726
+      },
+      {
+        "timeMs": 9300,
+        "value": 154.91428571428574
+      },
+      {
+        "timeMs": 9400,
+        "value": 154.91386271870803
+      },
+      {
+        "timeMs": 9500,
+        "value": 154.91344873502007
+      },
+      {
+        "timeMs": 9600,
+        "value": 154.91304347826096
+      },
+      {
+        "timeMs": 9700,
+        "value": 154.9126466753586
+      },
+      {
+        "timeMs": 9800,
+        "value": 154.91225806451618
+      },
+      {
+        "timeMs": 9900,
+        "value": 154.91187739463604
+      },
+      {
+        "timeMs": 10000,
+        "value": 154.91150442477874
+      },
+      {
+        "timeMs": 10100,
+        "value": 154.91113892365453
+      },
+      {
+        "timeMs": 10200,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10300,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10400,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10500,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10600,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10700,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10800,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 10900,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11000,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11100,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11200,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11300,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11400,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11500,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11600,
+        "value": 154.94029850746264
+      },
+      {
+        "timeMs": 11660,
+        "value": 154.94029850746264
+      }
+    ],
+    "packetLossPct": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 1900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 2900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 3900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 4900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 5900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 6900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 7900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 8900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 9900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11660,
+        "value": 0.0
+      }
+    ],
+    "throughputKbps": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 1420.8
+      },
+      {
+        "timeMs": 200,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 800,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 900,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 1000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1100,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 1200,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1600,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 1700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1800,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1900,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2000,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 2100,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2200,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2600,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 2700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2800,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 2900,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3100,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3200,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3300,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 3400,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 3500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3600,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 3700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3800,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 3900,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4100,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 4200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 4300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4500,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 4600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4800,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4900,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 5000,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 5100,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 5200,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5500,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 5600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5800,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 5900,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 6000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 6100,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 6200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 6300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 6400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 6500,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 6600,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 6700,
+        "value": 2150.4
+      },
+      {
+        "timeMs": 6800,
+        "value": 2073.6
+      },
+      {
+        "timeMs": 6900,
+        "value": 2150.4
+      },
+      {
+        "timeMs": 7000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 7100,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 7200,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 7300,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 7400,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 7500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 7600,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 7700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 7800,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 7900,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8100,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 8300,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 8400,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 8500,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8700,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 8800,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 8900,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 9000,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 9100,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 9200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 9300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 9400,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 9500,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 9600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 9700,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 9800,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 9900,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 10000,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 10100,
+        "value": 1382.4
+      },
+      {
+        "timeMs": 10200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11660,
+        "value": 0.0
+      }
+    ]
+  },
+  "simulationTimeMs": 11660,
+  "status": "completed",
+  "summary": {
+    "avgLatencyMs": 154.94029850746264,
+    "droppedPackets": 0,
+    "durationMs": 10000,
+    "jitterEstimateMs": 6.236892372778668,
+    "latePackets": 0,
+    "networkDropCount": 0,
+    "overflowCount": 0,
+    "p95LatencyMs": 168.0,
+    "packetLossRatePct": 0.0,
+    "playedFrames": 804,
+    "playedPackets": 2628,
+    "playoutSmoothnessPct": 100.0,
+    "receivedPackets": 2628,
+    "reorderCount": 38,
+    "sentFrames": 804,
+    "sentPackets": 2628,
+    "throughputKbps": 1812.610169491525,
+    "underflowCount": 0
+  }
+}

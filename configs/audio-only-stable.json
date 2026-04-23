@@ -1,0 +1,43 @@
+{
+  "name": "audio-only-stable",
+  "description": "Audio-only transport run with tight packetization and smaller bandwidth footprint.",
+  "durationMs": 10000,
+  "seed": 42,
+  "sampleIntervalMs": 100,
+  "audioStream": {
+    "enabled": true,
+    "streamId": "audio-main",
+    "mediaType": "audio",
+    "frameIntervalMs": 20,
+    "framePayloadBytes": 180,
+    "packetsPerFrame": 1
+  },
+  "videoStream": {
+    "enabled": false,
+    "streamId": "video-main",
+    "mediaType": "video",
+    "frameIntervalMs": 33,
+    "framePayloadBytes": 8400,
+    "packetsPerFrame": 7
+  },
+  "network": {
+    "baseLatencyMs": 38,
+    "jitterMs": 2,
+    "packetLossRate": 0.0,
+    "burstLossTriggerRate": 0.0,
+    "burstLossLength": 0,
+    "reorderRate": 0.0,
+    "reorderHoldMs": 0,
+    "bandwidthKbps": 320,
+    "queueCapacityPackets": 300,
+    "queuePressureDropThresholdMs": 360
+  },
+  "jitterBuffer": {
+    "targetDelayMs": 60,
+    "minDelayMs": 50,
+    "maxDelayMs": 260,
+    "maxPackets": 640,
+    "adaptive": false,
+    "startBufferFrames": 2
+  }
+}

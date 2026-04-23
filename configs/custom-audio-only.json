@@ -1,0 +1,43 @@
+{
+  "name": "custom-audio-only",
+  "description": "Audio-only deterministic preset for demos and quick regression runs.",
+  "durationMs": 8000,
+  "seed": 1337,
+  "sampleIntervalMs": 100,
+  "audioStream": {
+    "enabled": true,
+    "streamId": "audio-main",
+    "mediaType": "audio",
+    "frameIntervalMs": 20,
+    "framePayloadBytes": 180,
+    "packetsPerFrame": 1
+  },
+  "videoStream": {
+    "enabled": false,
+    "streamId": "video-main",
+    "mediaType": "video",
+    "frameIntervalMs": 33,
+    "framePayloadBytes": 8400,
+    "packetsPerFrame": 7
+  },
+  "network": {
+    "baseLatencyMs": 30,
+    "jitterMs": 12,
+    "packetLossRate": 0.01,
+    "burstLossTriggerRate": 0.0,
+    "burstLossLength": 0,
+    "reorderRate": 0.02,
+    "reorderHoldMs": 10,
+    "bandwidthKbps": 256,
+    "queueCapacityPackets": 120,
+    "queuePressureDropThresholdMs": 180
+  },
+  "jitterBuffer": {
+    "targetDelayMs": 70,
+    "minDelayMs": 40,
+    "maxDelayMs": 180,
+    "maxPackets": 256,
+    "adaptive": true,
+    "startBufferFrames": 2
+  }
+}

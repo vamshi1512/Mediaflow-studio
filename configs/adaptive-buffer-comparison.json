@@ -1,0 +1,43 @@
+{
+  "name": "adaptive-buffer-comparison",
+  "description": "Interview demo preset tuned for comparing fixed and adaptive delay policies under jitter.",
+  "durationMs": 10000,
+  "seed": 42,
+  "sampleIntervalMs": 100,
+  "audioStream": {
+    "enabled": true,
+    "streamId": "audio-main",
+    "mediaType": "audio",
+    "frameIntervalMs": 20,
+    "framePayloadBytes": 240,
+    "packetsPerFrame": 1
+  },
+  "videoStream": {
+    "enabled": true,
+    "streamId": "video-main",
+    "mediaType": "video",
+    "frameIntervalMs": 33,
+    "framePayloadBytes": 8400,
+    "packetsPerFrame": 7
+  },
+  "network": {
+    "baseLatencyMs": 58,
+    "jitterMs": 40,
+    "packetLossRate": 0.01,
+    "burstLossTriggerRate": 0.0,
+    "burstLossLength": 0,
+    "reorderRate": 0.0,
+    "reorderHoldMs": 0,
+    "bandwidthKbps": 2500,
+    "queueCapacityPackets": 300,
+    "queuePressureDropThresholdMs": 360
+  },
+  "jitterBuffer": {
+    "targetDelayMs": 95,
+    "minDelayMs": 50,
+    "maxDelayMs": 320,
+    "maxPackets": 640,
+    "adaptive": true,
+    "startBufferFrames": 2
+  }
+}

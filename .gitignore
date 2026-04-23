@@ -1,0 +1,10 @@
+build/
+build-tests/
+ui/dist/
+ui/node_modules/
+ui/*.js
+ui/*.d.ts
+ui/*.tsbuildinfo
+examples/*.generated.json
+compile_commands.json
+.DS_Store

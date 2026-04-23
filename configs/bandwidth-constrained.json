@@ -1,0 +1,43 @@
+{
+  "name": "bandwidth-constrained",
+  "description": "Pushes sender load above the link budget so queue pressure and drops appear.",
+  "durationMs": 10000,
+  "seed": 42,
+  "sampleIntervalMs": 100,
+  "audioStream": {
+    "enabled": true,
+    "streamId": "audio-main",
+    "mediaType": "audio",
+    "frameIntervalMs": 20,
+    "framePayloadBytes": 240,
+    "packetsPerFrame": 1
+  },
+  "videoStream": {
+    "enabled": true,
+    "streamId": "video-main",
+    "mediaType": "video",
+    "frameIntervalMs": 33,
+    "framePayloadBytes": 8400,
+    "packetsPerFrame": 7
+  },
+  "network": {
+    "baseLatencyMs": 38,
+    "jitterMs": 2,
+    "packetLossRate": 0.0,
+    "burstLossTriggerRate": 0.0,
+    "burstLossLength": 0,
+    "reorderRate": 0.0,
+    "reorderHoldMs": 0,
+    "bandwidthKbps": 1200,
+    "queueCapacityPackets": 180,
+    "queuePressureDropThresholdMs": 240
+  },
+  "jitterBuffer": {
+    "targetDelayMs": 90,
+    "minDelayMs": 50,
+    "maxDelayMs": 260,
+    "maxPackets": 640,
+    "adaptive": false,
+    "startBufferFrames": 2
+  }
+}

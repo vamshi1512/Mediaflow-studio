@@ -1,0 +1,4088 @@
+{
+  "bufferStrategy": "adaptive",
+  "config": {
+    "audioStream": {
+      "enabled": true,
+      "frameIntervalMs": 20,
+      "framePayloadBytes": 240,
+      "mediaType": "audio",
+      "packetsPerFrame": 1,
+      "streamId": "audio-main"
+    },
+    "description": "Interview demo preset tuned for comparing fixed and adaptive delay policies under jitter.",
+    "durationMs": 10000,
+    "jitterBuffer": {
+      "adaptive": true,
+      "maxDelayMs": 320,
+      "maxPackets": 640,
+      "minDelayMs": 50,
+      "startBufferFrames": 2,
+      "targetDelayMs": 95
+    },
+    "name": "adaptive-buffer-comparison",
+    "network": {
+      "bandwidthKbps": 2500,
+      "baseLatencyMs": 58,
+      "burstLossLength": 0,
+      "burstLossTriggerRate": 0.0,
+      "jitterMs": 40,
+      "packetLossRate": 0.01,
+      "queueCapacityPackets": 300,
+      "queuePressureDropThresholdMs": 360,
+      "reorderHoldMs": 0,
+      "reorderRate": 0.0
+    },
+    "sampleIntervalMs": 100,
+    "seed": 42,
+    "videoStream": {
+      "enabled": true,
+      "frameIntervalMs": 33,
+      "framePayloadBytes": 8400,
+      "mediaType": "video",
+      "packetsPerFrame": 7,
+      "streamId": "video-main"
+    }
+  },
+  "durationMs": 10000,
+  "exportedAtMs": 11778,
+  "final": true,
+  "recentEvents": [
+    {
+      "frameId": 290,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2515,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9661
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9661
+    },
+    {
+      "frameId": 290,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2511,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9671
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 145 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9671
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 155 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9675
+    },
+    {
+      "frameId": 9440,
+      "kind": "underflow",
+      "message": "Playout underflow on audio-main",
+      "packetId": null,
+      "severity": "warning",
+      "streamId": "audio-main",
+      "timeMs": 9675
+    },
+    {
+      "frameId": 291,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2043",
+      "packetId": 2524,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9683
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 144 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9683
+    },
+    {
+      "frameId": 291,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2521,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9692
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 143 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9692
+    },
+    {
+      "frameId": 292,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2048",
+      "packetId": 2530,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9701
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 142 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9701
+    },
+    {
+      "frameId": 292,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2529,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9709
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 141 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9709
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 154 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9716
+    },
+    {
+      "frameId": 291,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2523,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9718
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 140 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9718
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 139 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9718
+    },
+    {
+      "frameId": 292,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2528,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9722
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9722
+    },
+    {
+      "frameId": 293,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2052",
+      "packetId": 2536,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9730
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 137 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9730
+    },
+    {
+      "frameId": 292,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2527,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9731
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9731
+    },
+    {
+      "frameId": 292,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2532,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9736
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 137 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9736
+    },
+    {
+      "frameId": 294,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2060",
+      "packetId": 2546,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9739
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 140 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9739
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 139 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9743
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 153 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9744
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2540,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9746
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9746
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2539,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9756
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 139 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9756
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2537,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9758
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9758
+    },
+    {
+      "frameId": 485,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 485",
+      "packetId": 2543,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9758
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 152 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9758
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2535,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9763
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 139 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9763
+    },
+    {
+      "frameId": 294,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2544,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9773
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9776
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2538,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9777
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9777
+    },
+    {
+      "frameId": 484,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2542,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9780
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9780
+    },
+    {
+      "frameId": 295,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2066",
+      "packetId": 2553,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9782
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9782
+    },
+    {
+      "frameId": 293,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2541,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9785
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9785
+    },
+    {
+      "frameId": 294,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2545,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9793
+    },
+    {
+      "frameId": 296,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2073",
+      "packetId": 2562,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9795
+    },
+    {
+      "frameId": 488,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 488",
+      "packetId": 2560,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9802
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9802
+    },
+    {
+      "frameId": 487,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2559,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9803
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9803
+    },
+    {
+      "frameId": 295,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2555,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9810
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9810
+    },
+    {
+      "frameId": 294,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2550,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9815
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9815
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9816
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9820
+    },
+    {
+      "frameId": 296,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2078",
+      "packetId": 2567,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9831
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9831
+    },
+    {
+      "frameId": 295,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2552,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9836
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9836
+    },
+    {
+      "frameId": 295,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2556,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9838
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9838
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9839
+    },
+    {
+      "frameId": 297,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2081",
+      "packetId": 2572,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9843
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9843
+    },
+    {
+      "frameId": 296,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2565,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9845
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9845
+    },
+    {
+      "frameId": 295,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2557,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9847
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9847
+    },
+    {
+      "frameId": 297,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2084",
+      "packetId": 2575,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9854
+    },
+    {
+      "frameId": 295,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2558,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9855
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9855
+    },
+    {
+      "frameId": 296,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2561,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9856
+    },
+    {
+      "frameId": 297,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2571,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9860
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9860
+    },
+    {
+      "frameId": 491,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 491",
+      "packetId": 2577,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9861
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9861
+    },
+    {
+      "frameId": 297,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2574,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9864
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9864
+    },
+    {
+      "frameId": 296,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2566,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9870
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9870
+    },
+    {
+      "frameId": 490,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2569,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9874
+    },
+    {
+      "frameId": 298,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2087",
+      "packetId": 2579,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9876
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9876
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9876
+    },
+    {
+      "frameId": 292,
+      "kind": "underflow",
+      "message": "Playout underflow on video-main",
+      "packetId": null,
+      "severity": "warning",
+      "streamId": "video-main",
+      "timeMs": 9876
+    },
+    {
+      "frameId": 298,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2090",
+      "packetId": 2582,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9886
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 145 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9886
+    },
+    {
+      "frameId": 297,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2573,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9890
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9890
+    },
+    {
+      "frameId": 299,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2094",
+      "packetId": 2588,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9894
+    },
+    {
+      "frameId": 298,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2583,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9898
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9898
+    },
+    {
+      "frameId": 299,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2097",
+      "packetId": 2591,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9906
+    },
+    {
+      "frameId": 298,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2578,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9908
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9908
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2587,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9908
+    },
+    {
+      "frameId": 298,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2580,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9913
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9913
+    },
+    {
+      "frameId": 298,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2581,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9916
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9916
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9921
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 145 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9942
+    },
+    {
+      "frameId": 300,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2100",
+      "packetId": 2596,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9942
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9942
+    },
+    {
+      "frameId": 496,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 496",
+      "packetId": 2603,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9948
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 144 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9948
+    },
+    {
+      "frameId": 298,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2584,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9952
+    },
+    {
+      "frameId": 300,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2103",
+      "packetId": 2599,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9952
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 152 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9952
+    },
+    {
+      "frameId": 300,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2598,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9963
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9963
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2589,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9969
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9969
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9969
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2592,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9980
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 152 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9980
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2590,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9981
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 151 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9981
+    },
+    {
+      "frameId": 299,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2593,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9983
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 150 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9983
+    },
+    {
+      "frameId": 495,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2595,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9984
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 9984
+    },
+    {
+      "frameId": 300,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2106",
+      "packetId": 2602,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9988
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 149 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9988
+    },
+    {
+      "frameId": 301,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2111",
+      "packetId": 2608,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9990
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 148 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9990
+    },
+    {
+      "frameId": 302,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2114",
+      "packetId": 2613,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9991
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 147 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9991
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2606,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9992
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 146 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9992
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2604,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9993
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 145 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9993
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2605,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9994
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 144 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9994
+    },
+    {
+      "frameId": 300,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2597,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9997
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 143 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9997
+    },
+    {
+      "frameId": 300,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2601,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9997
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 142 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 9997
+    },
+    {
+      "frameId": 302,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2117",
+      "packetId": 2616,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10005
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 141 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10005
+    },
+    {
+      "frameId": 499,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 499",
+      "packetId": 2620,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10013
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 145 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10013
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 140 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10014
+    },
+    {
+      "frameId": 498,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2612,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10018
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 144 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10018
+    },
+    {
+      "frameId": 302,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2120",
+      "packetId": 2619,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10021
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 139 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10021
+    },
+    {
+      "frameId": 302,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2618,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10023
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 138 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10023
+    },
+    {
+      "frameId": 302,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2615,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10033
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 137 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10033
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2607,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10035
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 136 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10035
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2609,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10039
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 135 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10039
+    },
+    {
+      "frameId": 497,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2611,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10042
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 143 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "audio-main",
+      "timeMs": 10042
+    },
+    {
+      "frameId": 301,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2610,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10052
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 134 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10052
+    },
+    {
+      "frameId": 303,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2122",
+      "packetId": 2622,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10057
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 133 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10057
+    },
+    {
+      "frameId": 303,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2125",
+      "packetId": 2625,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10081
+    },
+    {
+      "frameId": 303,
+      "kind": "gap-observed",
+      "message": "Receiver observed sequence gap before packet 2127",
+      "packetId": 2627,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10096
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 132 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10096
+    },
+    {
+      "frameId": 303,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2621,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10098
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 131 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10098
+    },
+    {
+      "frameId": 303,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2623,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10101
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 130 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10101
+    },
+    {
+      "frameId": 303,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2624,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10112
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 129 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10112
+    },
+    {
+      "frameId": 303,
+      "kind": "reorder",
+      "message": "Receiver observed out-of-order packet delivery",
+      "packetId": 2626,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10116
+    },
+    {
+      "frameId": null,
+      "kind": "buffer-target-update",
+      "message": "Adjusted jitter buffer target to 128 ms",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "video-main",
+      "timeMs": 10116
+    },
+    {
+      "frameId": null,
+      "kind": "simulation-complete",
+      "message": "Simulation completed",
+      "packetId": null,
+      "severity": "info",
+      "streamId": "",
+      "timeMs": 11778
+    }
+  ],
+  "scenarioDescription": "Interview demo preset tuned for comparing fixed and adaptive delay policies under jitter.",
+  "scenarioName": "adaptive-buffer-comparison",
+  "seed": 42,
+  "series": {
+    "bufferOccupancyPackets": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 9.0
+      },
+      {
+        "timeMs": 200,
+        "value": 33.0
+      },
+      {
+        "timeMs": 300,
+        "value": 46.0
+      },
+      {
+        "timeMs": 400,
+        "value": 48.0
+      },
+      {
+        "timeMs": 500,
+        "value": 47.0
+      },
+      {
+        "timeMs": 600,
+        "value": 48.0
+      },
+      {
+        "timeMs": 700,
+        "value": 49.0
+      },
+      {
+        "timeMs": 800,
+        "value": 46.0
+      },
+      {
+        "timeMs": 900,
+        "value": 45.0
+      },
+      {
+        "timeMs": 1000,
+        "value": 37.0
+      },
+      {
+        "timeMs": 1100,
+        "value": 37.0
+      },
+      {
+        "timeMs": 1200,
+        "value": 37.0
+      },
+      {
+        "timeMs": 1300,
+        "value": 43.0
+      },
+      {
+        "timeMs": 1400,
+        "value": 43.0
+      },
+      {
+        "timeMs": 1500,
+        "value": 42.0
+      },
+      {
+        "timeMs": 1600,
+        "value": 49.0
+      },
+      {
+        "timeMs": 1700,
+        "value": 45.0
+      },
+      {
+        "timeMs": 1800,
+        "value": 44.0
+      },
+      {
+        "timeMs": 1900,
+        "value": 44.0
+      },
+      {
+        "timeMs": 2000,
+        "value": 41.0
+      },
+      {
+        "timeMs": 2100,
+        "value": 41.0
+      },
+      {
+        "timeMs": 2200,
+        "value": 46.0
+      },
+      {
+        "timeMs": 2300,
+        "value": 40.0
+      },
+      {
+        "timeMs": 2400,
+        "value": 43.0
+      },
+      {
+        "timeMs": 2500,
+        "value": 42.0
+      },
+      {
+        "timeMs": 2600,
+        "value": 42.0
+      },
+      {
+        "timeMs": 2700,
+        "value": 42.0
+      },
+      {
+        "timeMs": 2800,
+        "value": 41.0
+      },
+      {
+        "timeMs": 2900,
+        "value": 42.0
+      },
+      {
+        "timeMs": 3000,
+        "value": 48.0
+      },
+      {
+        "timeMs": 3100,
+        "value": 46.0
+      },
+      {
+        "timeMs": 3200,
+        "value": 44.0
+      },
+      {
+        "timeMs": 3300,
+        "value": 43.0
+      },
+      {
+        "timeMs": 3400,
+        "value": 45.0
+      },
+      {
+        "timeMs": 3500,
+        "value": 46.0
+      },
+      {
+        "timeMs": 3600,
+        "value": 43.0
+      },
+      {
+        "timeMs": 3700,
+        "value": 44.0
+      },
+      {
+        "timeMs": 3800,
+        "value": 38.0
+      },
+      {
+        "timeMs": 3900,
+        "value": 47.0
+      },
+      {
+        "timeMs": 4000,
+        "value": 40.0
+      },
+      {
+        "timeMs": 4100,
+        "value": 44.0
+      },
+      {
+        "timeMs": 4200,
+        "value": 46.0
+      },
+      {
+        "timeMs": 4300,
+        "value": 39.0
+      },
+      {
+        "timeMs": 4400,
+        "value": 41.0
+      },
+      {
+        "timeMs": 4500,
+        "value": 46.0
+      },
+      {
+        "timeMs": 4600,
+        "value": 41.0
+      },
+      {
+        "timeMs": 4700,
+        "value": 41.0
+      },
+      {
+        "timeMs": 4800,
+        "value": 34.0
+      },
+      {
+        "timeMs": 4900,
+        "value": 43.0
+      },
+      {
+        "timeMs": 5000,
+        "value": 37.0
+      },
+      {
+        "timeMs": 5100,
+        "value": 40.0
+      },
+      {
+        "timeMs": 5200,
+        "value": 39.0
+      },
+      {
+        "timeMs": 5300,
+        "value": 42.0
+      },
+      {
+        "timeMs": 5400,
+        "value": 35.0
+      },
+      {
+        "timeMs": 5500,
+        "value": 44.0
+      },
+      {
+        "timeMs": 5600,
+        "value": 41.0
+      },
+      {
+        "timeMs": 5700,
+        "value": 43.0
+      },
+      {
+        "timeMs": 5800,
+        "value": 44.0
+      },
+      {
+        "timeMs": 5900,
+        "value": 42.0
+      },
+      {
+        "timeMs": 6000,
+        "value": 41.0
+      },
+      {
+        "timeMs": 6100,
+        "value": 45.0
+      },
+      {
+        "timeMs": 6200,
+        "value": 40.0
+      },
+      {
+        "timeMs": 6300,
+        "value": 46.0
+      },
+      {
+        "timeMs": 6400,
+        "value": 44.0
+      },
+      {
+        "timeMs": 6500,
+        "value": 46.0
+      },
+      {
+        "timeMs": 6600,
+        "value": 44.0
+      },
+      {
+        "timeMs": 6700,
+        "value": 44.0
+      },
+      {
+        "timeMs": 6800,
+        "value": 36.0
+      },
+      {
+        "timeMs": 6900,
+        "value": 34.0
+      },
+      {
+        "timeMs": 7000,
+        "value": 34.0
+      },
+      {
+        "timeMs": 7100,
+        "value": 37.0
+      },
+      {
+        "timeMs": 7200,
+        "value": 48.0
+      },
+      {
+        "timeMs": 7300,
+        "value": 39.0
+      },
+      {
+        "timeMs": 7400,
+        "value": 45.0
+      },
+      {
+        "timeMs": 7500,
+        "value": 47.0
+      },
+      {
+        "timeMs": 7600,
+        "value": 49.0
+      },
+      {
+        "timeMs": 7700,
+        "value": 42.0
+      },
+      {
+        "timeMs": 7800,
+        "value": 44.0
+      },
+      {
+        "timeMs": 7900,
+        "value": 42.0
+      },
+      {
+        "timeMs": 8000,
+        "value": 39.0
+      },
+      {
+        "timeMs": 8100,
+        "value": 45.0
+      },
+      {
+        "timeMs": 8200,
+        "value": 45.0
+      },
+      {
+        "timeMs": 8300,
+        "value": 39.0
+      },
+      {
+        "timeMs": 8400,
+        "value": 40.0
+      },
+      {
+        "timeMs": 8500,
+        "value": 43.0
+      },
+      {
+        "timeMs": 8600,
+        "value": 41.0
+      },
+      {
+        "timeMs": 8700,
+        "value": 44.0
+      },
+      {
+        "timeMs": 8800,
+        "value": 42.0
+      },
+      {
+        "timeMs": 8900,
+        "value": 43.0
+      },
+      {
+        "timeMs": 9000,
+        "value": 43.0
+      },
+      {
+        "timeMs": 9100,
+        "value": 44.0
+      },
+      {
+        "timeMs": 9200,
+        "value": 45.0
+      },
+      {
+        "timeMs": 9300,
+        "value": 45.0
+      },
+      {
+        "timeMs": 9400,
+        "value": 42.0
+      },
+      {
+        "timeMs": 9500,
+        "value": 40.0
+      },
+      {
+        "timeMs": 9600,
+        "value": 46.0
+      },
+      {
+        "timeMs": 9700,
+        "value": 42.0
+      },
+      {
+        "timeMs": 9800,
+        "value": 44.0
+      },
+      {
+        "timeMs": 9900,
+        "value": 48.0
+      },
+      {
+        "timeMs": 10000,
+        "value": 48.0
+      },
+      {
+        "timeMs": 10100,
+        "value": 31.0
+      },
+      {
+        "timeMs": 10200,
+        "value": 8.0
+      },
+      {
+        "timeMs": 10300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11778,
+        "value": 0.0
+      }
+    ],
+    "jitterMs": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 6.409418243914843
+      },
+      {
+        "timeMs": 200,
+        "value": 26.858987824352116
+      },
+      {
+        "timeMs": 300,
+        "value": 31.9838801203439
+      },
+      {
+        "timeMs": 400,
+        "value": 33.021452229554754
+      },
+      {
+        "timeMs": 500,
+        "value": 33.863527602029336
+      },
+      {
+        "timeMs": 600,
+        "value": 36.42561962335402
+      },
+      {
+        "timeMs": 700,
+        "value": 30.427652758224756
+      },
+      {
+        "timeMs": 800,
+        "value": 32.27505665552049
+      },
+      {
+        "timeMs": 900,
+        "value": 27.20000750790774
+      },
+      {
+        "timeMs": 1000,
+        "value": 25.736965531175812
+      },
+      {
+        "timeMs": 1100,
+        "value": 26.387025595168364
+      },
+      {
+        "timeMs": 1200,
+        "value": 29.48829701846627
+      },
+      {
+        "timeMs": 1300,
+        "value": 29.81150295070291
+      },
+      {
+        "timeMs": 1400,
+        "value": 31.965150095228584
+      },
+      {
+        "timeMs": 1500,
+        "value": 31.177682350357045
+      },
+      {
+        "timeMs": 1600,
+        "value": 34.094318178772554
+      },
+      {
+        "timeMs": 1700,
+        "value": 33.76221329698918
+      },
+      {
+        "timeMs": 1800,
+        "value": 27.357191471921926
+      },
+      {
+        "timeMs": 1900,
+        "value": 28.885011746011152
+      },
+      {
+        "timeMs": 2000,
+        "value": 33.442573594866595
+      },
+      {
+        "timeMs": 2100,
+        "value": 31.401789158971248
+      },
+      {
+        "timeMs": 2200,
+        "value": 32.14174789234242
+      },
+      {
+        "timeMs": 2300,
+        "value": 30.88022711199892
+      },
+      {
+        "timeMs": 2400,
+        "value": 31.677626886791927
+      },
+      {
+        "timeMs": 2500,
+        "value": 26.417867420771675
+      },
+      {
+        "timeMs": 2600,
+        "value": 33.61682325836046
+      },
+      {
+        "timeMs": 2700,
+        "value": 30.960723825977773
+      },
+      {
+        "timeMs": 2800,
+        "value": 26.579282863032454
+      },
+      {
+        "timeMs": 2900,
+        "value": 32.22416537367798
+      },
+      {
+        "timeMs": 3000,
+        "value": 28.402330549496167
+      },
+      {
+        "timeMs": 3100,
+        "value": 26.32938008077012
+      },
+      {
+        "timeMs": 3200,
+        "value": 32.976226233794115
+      },
+      {
+        "timeMs": 3300,
+        "value": 29.768681005638133
+      },
+      {
+        "timeMs": 3400,
+        "value": 27.160288015875487
+      },
+      {
+        "timeMs": 3500,
+        "value": 27.019652189558663
+      },
+      {
+        "timeMs": 3600,
+        "value": 28.32514130267044
+      },
+      {
+        "timeMs": 3700,
+        "value": 32.59956806668531
+      },
+      {
+        "timeMs": 3800,
+        "value": 24.901389814084638
+      },
+      {
+        "timeMs": 3900,
+        "value": 34.061006814031636
+      },
+      {
+        "timeMs": 4000,
+        "value": 27.423960044963476
+      },
+      {
+        "timeMs": 4100,
+        "value": 29.77959579233982
+      },
+      {
+        "timeMs": 4200,
+        "value": 36.990355595734606
+      },
+      {
+        "timeMs": 4300,
+        "value": 26.92628363393596
+      },
+      {
+        "timeMs": 4400,
+        "value": 27.83270408660199
+      },
+      {
+        "timeMs": 4500,
+        "value": 32.62013827788861
+      },
+      {
+        "timeMs": 4600,
+        "value": 30.253202214711912
+      },
+      {
+        "timeMs": 4700,
+        "value": 25.43076750355127
+      },
+      {
+        "timeMs": 4800,
+        "value": 18.91750373454979
+      },
+      {
+        "timeMs": 4900,
+        "value": 27.6028166194892
+      },
+      {
+        "timeMs": 5000,
+        "value": 24.921521054542065
+      },
+      {
+        "timeMs": 5100,
+        "value": 28.788075664178564
+      },
+      {
+        "timeMs": 5200,
+        "value": 27.807720061539527
+      },
+      {
+        "timeMs": 5300,
+        "value": 25.40165766034843
+      },
+      {
+        "timeMs": 5400,
+        "value": 17.428184107862684
+      },
+      {
+        "timeMs": 5500,
+        "value": 33.820622567421665
+      },
+      {
+        "timeMs": 5600,
+        "value": 35.40943125681998
+      },
+      {
+        "timeMs": 5700,
+        "value": 30.75521848232245
+      },
+      {
+        "timeMs": 5800,
+        "value": 37.262448047378086
+      },
+      {
+        "timeMs": 5900,
+        "value": 33.12337193846852
+      },
+      {
+        "timeMs": 6000,
+        "value": 22.75080805893492
+      },
+      {
+        "timeMs": 6100,
+        "value": 32.68644003669497
+      },
+      {
+        "timeMs": 6200,
+        "value": 29.63067254707014
+      },
+      {
+        "timeMs": 6300,
+        "value": 31.351256746971128
+      },
+      {
+        "timeMs": 6400,
+        "value": 29.293706316846112
+      },
+      {
+        "timeMs": 6500,
+        "value": 27.78190951271391
+      },
+      {
+        "timeMs": 6600,
+        "value": 27.29765436631048
+      },
+      {
+        "timeMs": 6700,
+        "value": 28.473945776746948
+      },
+      {
+        "timeMs": 6800,
+        "value": 21.255884644770557
+      },
+      {
+        "timeMs": 6900,
+        "value": 23.573399665352266
+      },
+      {
+        "timeMs": 7000,
+        "value": 25.519940654814675
+      },
+      {
+        "timeMs": 7100,
+        "value": 25.570542135532087
+      },
+      {
+        "timeMs": 7200,
+        "value": 29.0647732933566
+      },
+      {
+        "timeMs": 7300,
+        "value": 24.887191864309788
+      },
+      {
+        "timeMs": 7400,
+        "value": 37.986202496769025
+      },
+      {
+        "timeMs": 7500,
+        "value": 34.03691500390186
+      },
+      {
+        "timeMs": 7600,
+        "value": 32.72393831760361
+      },
+      {
+        "timeMs": 7700,
+        "value": 24.842801212492027
+      },
+      {
+        "timeMs": 7800,
+        "value": 26.979637352469318
+      },
+      {
+        "timeMs": 7900,
+        "value": 20.46506468759234
+      },
+      {
+        "timeMs": 8000,
+        "value": 21.13293408235448
+      },
+      {
+        "timeMs": 8100,
+        "value": 36.18848952526512
+      },
+      {
+        "timeMs": 8200,
+        "value": 35.42104096438942
+      },
+      {
+        "timeMs": 8300,
+        "value": 30.980834545794437
+      },
+      {
+        "timeMs": 8400,
+        "value": 27.56961440463007
+      },
+      {
+        "timeMs": 8500,
+        "value": 26.522539231825153
+      },
+      {
+        "timeMs": 8600,
+        "value": 27.505333315338873
+      },
+      {
+        "timeMs": 8700,
+        "value": 29.239470615193323
+      },
+      {
+        "timeMs": 8800,
+        "value": 28.637843983136825
+      },
+      {
+        "timeMs": 8900,
+        "value": 30.746150824808826
+      },
+      {
+        "timeMs": 9000,
+        "value": 30.4703556083821
+      },
+      {
+        "timeMs": 9100,
+        "value": 24.72261328327687
+      },
+      {
+        "timeMs": 9200,
+        "value": 31.967371845971197
+      },
+      {
+        "timeMs": 9300,
+        "value": 26.78352506098738
+      },
+      {
+        "timeMs": 9400,
+        "value": 33.33511565626806
+      },
+      {
+        "timeMs": 9500,
+        "value": 39.34852212935112
+      },
+      {
+        "timeMs": 9600,
+        "value": 32.62763612999236
+      },
+      {
+        "timeMs": 9700,
+        "value": 24.927967837071176
+      },
+      {
+        "timeMs": 9800,
+        "value": 30.55670373371011
+      },
+      {
+        "timeMs": 9900,
+        "value": 29.094831038789057
+      },
+      {
+        "timeMs": 10000,
+        "value": 23.64277052364993
+      },
+      {
+        "timeMs": 10100,
+        "value": 19.36378054143304
+      },
+      {
+        "timeMs": 10200,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10300,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10400,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10500,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10600,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10700,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10800,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 10900,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11000,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11100,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11200,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11300,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11400,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11500,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11600,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11700,
+        "value": 17.014589679525518
+      },
+      {
+        "timeMs": 11778,
+        "value": 17.014589679525518
+      }
+    ],
+    "latencyMs": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 300,
+        "value": 237.5
+      },
+      {
+        "timeMs": 400,
+        "value": 238.28571428571428
+      },
+      {
+        "timeMs": 500,
+        "value": 240.66666666666666
+      },
+      {
+        "timeMs": 600,
+        "value": 240.51724137931032
+      },
+      {
+        "timeMs": 700,
+        "value": 242.3611111111111
+      },
+      {
+        "timeMs": 800,
+        "value": 242.33333333333331
+      },
+      {
+        "timeMs": 900,
+        "value": 242.24528301886787
+      },
+      {
+        "timeMs": 1000,
+        "value": 241.4838709677419
+      },
+      {
+        "timeMs": 1100,
+        "value": 240.36231884057972
+      },
+      {
+        "timeMs": 1200,
+        "value": 239.18181818181816
+      },
+      {
+        "timeMs": 1300,
+        "value": 238.84705882352938
+      },
+      {
+        "timeMs": 1400,
+        "value": 238.52688172043005
+      },
+      {
+        "timeMs": 1500,
+        "value": 238.1485148514851
+      },
+      {
+        "timeMs": 1600,
+        "value": 238.27777777777774
+      },
+      {
+        "timeMs": 1700,
+        "value": 238.49999999999997
+      },
+      {
+        "timeMs": 1800,
+        "value": 238.60975609756096
+      },
+      {
+        "timeMs": 1900,
+        "value": 238.37692307692305
+      },
+      {
+        "timeMs": 2000,
+        "value": 238.15217391304344
+      },
+      {
+        "timeMs": 2100,
+        "value": 238.26027397260265
+      },
+      {
+        "timeMs": 2200,
+        "value": 238.2402597402597
+      },
+      {
+        "timeMs": 2300,
+        "value": 238.16666666666663
+      },
+      {
+        "timeMs": 2400,
+        "value": 238.10714285714283
+      },
+      {
+        "timeMs": 2500,
+        "value": 237.9488636363636
+      },
+      {
+        "timeMs": 2600,
+        "value": 237.6902173913043
+      },
+      {
+        "timeMs": 2700,
+        "value": 237.59685863874344
+      },
+      {
+        "timeMs": 2800,
+        "value": 237.510101010101
+      },
+      {
+        "timeMs": 2900,
+        "value": 237.4439024390244
+      },
+      {
+        "timeMs": 3000,
+        "value": 237.3849765258216
+      },
+      {
+        "timeMs": 3100,
+        "value": 237.17194570135746
+      },
+      {
+        "timeMs": 3200,
+        "value": 237.0526315789474
+      },
+      {
+        "timeMs": 3300,
+        "value": 236.98728813559325
+      },
+      {
+        "timeMs": 3400,
+        "value": 236.89711934156384
+      },
+      {
+        "timeMs": 3500,
+        "value": 236.93625498007975
+      },
+      {
+        "timeMs": 3600,
+        "value": 236.93050193050198
+      },
+      {
+        "timeMs": 3700,
+        "value": 236.86415094339625
+      },
+      {
+        "timeMs": 3800,
+        "value": 236.79853479853486
+      },
+      {
+        "timeMs": 3900,
+        "value": 236.64285714285722
+      },
+      {
+        "timeMs": 4000,
+        "value": 236.55709342560561
+      },
+      {
+        "timeMs": 4100,
+        "value": 236.44406779661026
+      },
+      {
+        "timeMs": 4200,
+        "value": 236.36092715231797
+      },
+      {
+        "timeMs": 4300,
+        "value": 236.46945337620588
+      },
+      {
+        "timeMs": 4400,
+        "value": 236.3887147335424
+      },
+      {
+        "timeMs": 4500,
+        "value": 236.25230769230777
+      },
+      {
+        "timeMs": 4600,
+        "value": 236.2162162162163
+      },
+      {
+        "timeMs": 4700,
+        "value": 236.01466275659834
+      },
+      {
+        "timeMs": 4800,
+        "value": 235.67142857142863
+      },
+      {
+        "timeMs": 4900,
+        "value": 235.32402234636876
+      },
+      {
+        "timeMs": 5000,
+        "value": 235.09836065573774
+      },
+      {
+        "timeMs": 5100,
+        "value": 235.10187667560325
+      },
+      {
+        "timeMs": 5200,
+        "value": 235.12860892388454
+      },
+      {
+        "timeMs": 5300,
+        "value": 235.03092783505156
+      },
+      {
+        "timeMs": 5400,
+        "value": 234.75125628140702
+      },
+      {
+        "timeMs": 5500,
+        "value": 234.6460396039604
+      },
+      {
+        "timeMs": 5600,
+        "value": 234.73543689320388
+      },
+      {
+        "timeMs": 5700,
+        "value": 234.7833333333333
+      },
+      {
+        "timeMs": 5800,
+        "value": 234.84579439252335
+      },
+      {
+        "timeMs": 5900,
+        "value": 234.99082568807341
+      },
+      {
+        "timeMs": 6000,
+        "value": 235.00225733634318
+      },
+      {
+        "timeMs": 6100,
+        "value": 234.92873051224956
+      },
+      {
+        "timeMs": 6200,
+        "value": 235.02188183807453
+      },
+      {
+        "timeMs": 6300,
+        "value": 235.07956989247324
+      },
+      {
+        "timeMs": 6400,
+        "value": 235.0699152542374
+      },
+      {
+        "timeMs": 6500,
+        "value": 235.10208333333347
+      },
+      {
+        "timeMs": 6600,
+        "value": 235.07991803278702
+      },
+      {
+        "timeMs": 6700,
+        "value": 235.05241935483886
+      },
+      {
+        "timeMs": 6800,
+        "value": 234.95427435387688
+      },
+      {
+        "timeMs": 6900,
+        "value": 234.7382812500001
+      },
+      {
+        "timeMs": 7000,
+        "value": 234.5722543352602
+      },
+      {
+        "timeMs": 7100,
+        "value": 234.48571428571432
+      },
+      {
+        "timeMs": 7200,
+        "value": 234.4398496240602
+      },
+      {
+        "timeMs": 7300,
+        "value": 234.37962962962965
+      },
+      {
+        "timeMs": 7400,
+        "value": 234.34552102376603
+      },
+      {
+        "timeMs": 7500,
+        "value": 234.47292418772568
+      },
+      {
+        "timeMs": 7600,
+        "value": 234.60892857142863
+      },
+      {
+        "timeMs": 7700,
+        "value": 234.7070175438597
+      },
+      {
+        "timeMs": 7800,
+        "value": 234.70761245674743
+      },
+      {
+        "timeMs": 7900,
+        "value": 234.6598290598291
+      },
+      {
+        "timeMs": 8000,
+        "value": 234.50927487352448
+      },
+      {
+        "timeMs": 8100,
+        "value": 234.38666666666668
+      },
+      {
+        "timeMs": 8200,
+        "value": 234.4678747940692
+      },
+      {
+        "timeMs": 8300,
+        "value": 234.55194805194805
+      },
+      {
+        "timeMs": 8400,
+        "value": 234.56249999999997
+      },
+      {
+        "timeMs": 8500,
+        "value": 234.51582278481015
+      },
+      {
+        "timeMs": 8600,
+        "value": 234.43437500000005
+      },
+      {
+        "timeMs": 8700,
+        "value": 234.44290123456796
+      },
+      {
+        "timeMs": 8800,
+        "value": 234.44207317073173
+      },
+      {
+        "timeMs": 8900,
+        "value": 234.44126506024097
+      },
+      {
+        "timeMs": 9000,
+        "value": 234.4122023809524
+      },
+      {
+        "timeMs": 9100,
+        "value": 234.42562592047133
+      },
+      {
+        "timeMs": 9200,
+        "value": 234.38282387190688
+      },
+      {
+        "timeMs": 9300,
+        "value": 234.4330935251799
+      },
+      {
+        "timeMs": 9400,
+        "value": 234.49502133712664
+      },
+      {
+        "timeMs": 9500,
+        "value": 234.5478873239437
+      },
+      {
+        "timeMs": 9600,
+        "value": 234.66108786610883
+      },
+      {
+        "timeMs": 9700,
+        "value": 234.70718232044206
+      },
+      {
+        "timeMs": 9800,
+        "value": 234.67486338797823
+      },
+      {
+        "timeMs": 9900,
+        "value": 234.6346414073073
+      },
+      {
+        "timeMs": 10000,
+        "value": 234.58902275769753
+      },
+      {
+        "timeMs": 10100,
+        "value": 234.4788359788361
+      },
+      {
+        "timeMs": 10200,
+        "value": 234.34031413612576
+      },
+      {
+        "timeMs": 10300,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10400,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10500,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10600,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10700,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10800,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 10900,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11000,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11100,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11200,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11300,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11400,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11500,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11600,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11700,
+        "value": 234.30548302872074
+      },
+      {
+        "timeMs": 11778,
+        "value": 234.30548302872074
+      }
+    ],
+    "packetLossPct": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 300,
+        "value": 1.1627906976744187
+      },
+      {
+        "timeMs": 400,
+        "value": 0.8928571428571428
+      },
+      {
+        "timeMs": 500,
+        "value": 0.7246376811594203
+      },
+      {
+        "timeMs": 600,
+        "value": 0.6097560975609756
+      },
+      {
+        "timeMs": 700,
+        "value": 0.5263157894736842
+      },
+      {
+        "timeMs": 800,
+        "value": 0.4629629629629629
+      },
+      {
+        "timeMs": 900,
+        "value": 0.8264462809917356
+      },
+      {
+        "timeMs": 1000,
+        "value": 0.7462686567164178
+      },
+      {
+        "timeMs": 1100,
+        "value": 0.6802721088435374
+      },
+      {
+        "timeMs": 1200,
+        "value": 0.625
+      },
+      {
+        "timeMs": 1300,
+        "value": 0.5780346820809248
+      },
+      {
+        "timeMs": 1400,
+        "value": 0.5376344086021506
+      },
+      {
+        "timeMs": 1500,
+        "value": 0.5025125628140703
+      },
+      {
+        "timeMs": 1600,
+        "value": 1.179245283018868
+      },
+      {
+        "timeMs": 1700,
+        "value": 1.1111111111111112
+      },
+      {
+        "timeMs": 1800,
+        "value": 1.050420168067227
+      },
+      {
+        "timeMs": 1900,
+        "value": 0.9960159362549801
+      },
+      {
+        "timeMs": 2000,
+        "value": 0.946969696969697
+      },
+      {
+        "timeMs": 2100,
+        "value": 0.9025270758122743
+      },
+      {
+        "timeMs": 2200,
+        "value": 1.206896551724138
+      },
+      {
+        "timeMs": 2300,
+        "value": 1.155115511551155
+      },
+      {
+        "timeMs": 2400,
+        "value": 1.2658227848101267
+      },
+      {
+        "timeMs": 2500,
+        "value": 1.21580547112462
+      },
+      {
+        "timeMs": 2600,
+        "value": 1.3157894736842104
+      },
+      {
+        "timeMs": 2700,
+        "value": 1.4084507042253522
+      },
+      {
+        "timeMs": 2800,
+        "value": 1.358695652173913
+      },
+      {
+        "timeMs": 2900,
+        "value": 1.3123359580052494
+      },
+      {
+        "timeMs": 3000,
+        "value": 1.3959390862944163
+      },
+      {
+        "timeMs": 3100,
+        "value": 1.4742014742014742
+      },
+      {
+        "timeMs": 3200,
+        "value": 1.4285714285714286
+      },
+      {
+        "timeMs": 3300,
+        "value": 1.3745704467353952
+      },
+      {
+        "timeMs": 3400,
+        "value": 1.4460511679644048
+      },
+      {
+        "timeMs": 3500,
+        "value": 1.6216216216216217
+      },
+      {
+        "timeMs": 3600,
+        "value": 1.5772870662460567
+      },
+      {
+        "timeMs": 3700,
+        "value": 1.5353121801432956
+      },
+      {
+        "timeMs": 3800,
+        "value": 1.4955134596211366
+      },
+      {
+        "timeMs": 3900,
+        "value": 1.5549076773566568
+      },
+      {
+        "timeMs": 4000,
+        "value": 1.6113744075829384
+      },
+      {
+        "timeMs": 4100,
+        "value": 1.572617946345976
+      },
+      {
+        "timeMs": 4200,
+        "value": 1.5356820234869015
+      },
+      {
+        "timeMs": 4300,
+        "value": 1.5887025595763458
+      },
+      {
+        "timeMs": 4400,
+        "value": 1.639344262295082
+      },
+      {
+        "timeMs": 4500,
+        "value": 1.6033755274261603
+      },
+      {
+        "timeMs": 4600,
+        "value": 1.568951279933939
+      },
+      {
+        "timeMs": 4700,
+        "value": 1.5359741309620047
+      },
+      {
+        "timeMs": 4800,
+        "value": 1.5043547110055424
+      },
+      {
+        "timeMs": 4900,
+        "value": 1.474010861132661
+      },
+      {
+        "timeMs": 5000,
+        "value": 1.520912547528517
+      },
+      {
+        "timeMs": 5100,
+        "value": 1.4914243102162565
+      },
+      {
+        "timeMs": 5200,
+        "value": 1.4630577907827358
+      },
+      {
+        "timeMs": 5300,
+        "value": 1.4357501794687724
+      },
+      {
+        "timeMs": 5400,
+        "value": 1.4094432699083863
+      },
+      {
+        "timeMs": 5500,
+        "value": 1.384083044982699
+      },
+      {
+        "timeMs": 5600,
+        "value": 1.3596193065941535
+      },
+      {
+        "timeMs": 5700,
+        "value": 1.3360053440213762
+      },
+      {
+        "timeMs": 5800,
+        "value": 1.3788575180564675
+      },
+      {
+        "timeMs": 5900,
+        "value": 1.4848289218850872
+      },
+      {
+        "timeMs": 6000,
+        "value": 1.4603174603174605
+      },
+      {
+        "timeMs": 6100,
+        "value": 1.499063085571518
+      },
+      {
+        "timeMs": 6200,
+        "value": 1.4751075599262446
+      },
+      {
+        "timeMs": 6300,
+        "value": 1.4519056261343013
+      },
+      {
+        "timeMs": 6400,
+        "value": 1.429422275163788
+      },
+      {
+        "timeMs": 6500,
+        "value": 1.4076246334310851
+      },
+      {
+        "timeMs": 6600,
+        "value": 1.4959723820483315
+      },
+      {
+        "timeMs": 6700,
+        "value": 1.530612244897959
+      },
+      {
+        "timeMs": 6800,
+        "value": 1.5083798882681565
+      },
+      {
+        "timeMs": 6900,
+        "value": 1.5418502202643172
+      },
+      {
+        "timeMs": 7000,
+        "value": 1.520086862106406
+      },
+      {
+        "timeMs": 7100,
+        "value": 1.5524625267665952
+      },
+      {
+        "timeMs": 7200,
+        "value": 1.5311510031678985
+      },
+      {
+        "timeMs": 7300,
+        "value": 1.6666666666666667
+      },
+      {
+        "timeMs": 7400,
+        "value": 1.644398766700925
+      },
+      {
+        "timeMs": 7500,
+        "value": 1.6227180527383367
+      },
+      {
+        "timeMs": 7600,
+        "value": 1.6016016016016015
+      },
+      {
+        "timeMs": 7700,
+        "value": 1.6304347826086956
+      },
+      {
+        "timeMs": 7800,
+        "value": 1.6097560975609757
+      },
+      {
+        "timeMs": 7900,
+        "value": 1.6377649325626205
+      },
+      {
+        "timeMs": 8000,
+        "value": 1.6175071360608944
+      },
+      {
+        "timeMs": 8100,
+        "value": 1.5977443609022555
+      },
+      {
+        "timeMs": 8200,
+        "value": 1.5784586815227482
+      },
+      {
+        "timeMs": 8300,
+        "value": 1.5596330275229358
+      },
+      {
+        "timeMs": 8400,
+        "value": 1.5412511332728922
+      },
+      {
+        "timeMs": 8500,
+        "value": 1.5232974910394266
+      },
+      {
+        "timeMs": 8600,
+        "value": 1.5057573073516386
+      },
+      {
+        "timeMs": 8700,
+        "value": 1.4886164623467601
+      },
+      {
+        "timeMs": 8800,
+        "value": 1.471861471861472
+      },
+      {
+        "timeMs": 8900,
+        "value": 1.4982876712328765
+      },
+      {
+        "timeMs": 9000,
+        "value": 1.4817950889077054
+      },
+      {
+        "timeMs": 9100,
+        "value": 1.4656616415410386
+      },
+      {
+        "timeMs": 9200,
+        "value": 1.4498757249378624
+      },
+      {
+        "timeMs": 9300,
+        "value": 1.4344262295081966
+      },
+      {
+        "timeMs": 9400,
+        "value": 1.5004055150040552
+      },
+      {
+        "timeMs": 9500,
+        "value": 1.5248796147672552
+      },
+      {
+        "timeMs": 9600,
+        "value": 1.5091342335186657
+      },
+      {
+        "timeMs": 9700,
+        "value": 1.5330188679245282
+      },
+      {
+        "timeMs": 9800,
+        "value": 1.517509727626459
+      },
+      {
+        "timeMs": 9900,
+        "value": 1.498271225509028
+      },
+      {
+        "timeMs": 10000,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10100,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10200,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10300,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10400,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10500,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10600,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10700,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10800,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 10900,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11000,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11100,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11200,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11300,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11400,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11500,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11600,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11700,
+        "value": 1.4840182648401825
+      },
+      {
+        "timeMs": 11778,
+        "value": 1.4840182648401825
+      }
+    ],
+    "throughputKbps": [
+      {
+        "timeMs": 0,
+        "value": 0.0
+      },
+      {
+        "timeMs": 100,
+        "value": 787.2
+      },
+      {
+        "timeMs": 200,
+        "value": 1920.0
+      },
+      {
+        "timeMs": 300,
+        "value": 2438.4
+      },
+      {
+        "timeMs": 400,
+        "value": 2380.8
+      },
+      {
+        "timeMs": 500,
+        "value": 2073.6
+      },
+      {
+        "timeMs": 600,
+        "value": 1977.6
+      },
+      {
+        "timeMs": 700,
+        "value": 2265.6
+      },
+      {
+        "timeMs": 800,
+        "value": 1920.0
+      },
+      {
+        "timeMs": 900,
+        "value": 1862.4
+      },
+      {
+        "timeMs": 1000,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 1100,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 1200,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 1300,
+        "value": 2611.2
+      },
+      {
+        "timeMs": 1400,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1500,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 1600,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 1700,
+        "value": 1881.6
+      },
+      {
+        "timeMs": 1800,
+        "value": 2342.4
+      },
+      {
+        "timeMs": 1900,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 2000,
+        "value": 1824.0
+      },
+      {
+        "timeMs": 2100,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 2200,
+        "value": 2668.8
+      },
+      {
+        "timeMs": 2300,
+        "value": 1689.6
+      },
+      {
+        "timeMs": 2400,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 2500,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 2600,
+        "value": 2035.2
+      },
+      {
+        "timeMs": 2700,
+        "value": 1939.2
+      },
+      {
+        "timeMs": 2800,
+        "value": 1996.8
+      },
+      {
+        "timeMs": 2900,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 3000,
+        "value": 2534.4
+      },
+      {
+        "timeMs": 3100,
+        "value": 1996.8
+      },
+      {
+        "timeMs": 3200,
+        "value": 1670.4
+      },
+      {
+        "timeMs": 3300,
+        "value": 2169.6
+      },
+      {
+        "timeMs": 3400,
+        "value": 2054.4
+      },
+      {
+        "timeMs": 3500,
+        "value": 2284.8
+      },
+      {
+        "timeMs": 3600,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 3700,
+        "value": 1939.2
+      },
+      {
+        "timeMs": 3800,
+        "value": 2265.6
+      },
+      {
+        "timeMs": 3900,
+        "value": 2227.2
+      },
+      {
+        "timeMs": 4000,
+        "value": 2265.6
+      },
+      {
+        "timeMs": 4100,
+        "value": 1728.0
+      },
+      {
+        "timeMs": 4200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 4300,
+        "value": 2035.2
+      },
+      {
+        "timeMs": 4400,
+        "value": 2227.2
+      },
+      {
+        "timeMs": 4500,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 4600,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 4700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 4800,
+        "value": 1612.8
+      },
+      {
+        "timeMs": 4900,
+        "value": 2976.0
+      },
+      {
+        "timeMs": 5000,
+        "value": 1536.0
+      },
+      {
+        "timeMs": 5100,
+        "value": 2380.8
+      },
+      {
+        "timeMs": 5200,
+        "value": 1862.4
+      },
+      {
+        "timeMs": 5300,
+        "value": 2380.8
+      },
+      {
+        "timeMs": 5400,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 5500,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 5600,
+        "value": 2054.4
+      },
+      {
+        "timeMs": 5700,
+        "value": 2150.4
+      },
+      {
+        "timeMs": 5800,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 5900,
+        "value": 2073.6
+      },
+      {
+        "timeMs": 6000,
+        "value": 1766.4
+      },
+      {
+        "timeMs": 6100,
+        "value": 2380.8
+      },
+      {
+        "timeMs": 6200,
+        "value": 1708.8
+      },
+      {
+        "timeMs": 6300,
+        "value": 2457.6
+      },
+      {
+        "timeMs": 6400,
+        "value": 1977.6
+      },
+      {
+        "timeMs": 6500,
+        "value": 2227.2
+      },
+      {
+        "timeMs": 6600,
+        "value": 1996.8
+      },
+      {
+        "timeMs": 6700,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 6800,
+        "value": 1824.0
+      },
+      {
+        "timeMs": 6900,
+        "value": 2169.6
+      },
+      {
+        "timeMs": 7000,
+        "value": 1939.2
+      },
+      {
+        "timeMs": 7100,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 7200,
+        "value": 2419.2
+      },
+      {
+        "timeMs": 7300,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 7400,
+        "value": 2092.8
+      },
+      {
+        "timeMs": 7500,
+        "value": 2035.2
+      },
+      {
+        "timeMs": 7600,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 7700,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 7800,
+        "value": 2304.0
+      },
+      {
+        "timeMs": 7900,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 8000,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 8100,
+        "value": 1939.2
+      },
+      {
+        "timeMs": 8200,
+        "value": 2016.0
+      },
+      {
+        "timeMs": 8300,
+        "value": 2284.8
+      },
+      {
+        "timeMs": 8400,
+        "value": 2131.2
+      },
+      {
+        "timeMs": 8500,
+        "value": 2323.2
+      },
+      {
+        "timeMs": 8600,
+        "value": 2073.6
+      },
+      {
+        "timeMs": 8700,
+        "value": 2246.4
+      },
+      {
+        "timeMs": 8800,
+        "value": 2150.4
+      },
+      {
+        "timeMs": 8900,
+        "value": 1977.6
+      },
+      {
+        "timeMs": 9000,
+        "value": 2265.6
+      },
+      {
+        "timeMs": 9100,
+        "value": 2035.2
+      },
+      {
+        "timeMs": 9200,
+        "value": 2208.0
+      },
+      {
+        "timeMs": 9300,
+        "value": 2112.0
+      },
+      {
+        "timeMs": 9400,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 9500,
+        "value": 1900.8
+      },
+      {
+        "timeMs": 9600,
+        "value": 2668.8
+      },
+      {
+        "timeMs": 9700,
+        "value": 1632.0
+      },
+      {
+        "timeMs": 9800,
+        "value": 2304.0
+      },
+      {
+        "timeMs": 9900,
+        "value": 2323.2
+      },
+      {
+        "timeMs": 10000,
+        "value": 2188.8
+      },
+      {
+        "timeMs": 10100,
+        "value": 1305.6
+      },
+      {
+        "timeMs": 10200,
+        "value": 288.0
+      },
+      {
+        "timeMs": 10300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10800,
+        "value": 0.0
+      },
+      {
+        "timeMs": 10900,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11000,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11100,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11200,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11300,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11400,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11500,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11600,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11700,
+        "value": 0.0
+      },
+      {
+        "timeMs": 11778,
+        "value": 0.0
+      }
+    ]
+  },
+  "simulationTimeMs": 11778,
+  "status": "completed",
+  "summary": {
+    "avgLatencyMs": 234.30548302872074,
+    "droppedPackets": 39,
+    "durationMs": 10000,
+    "jitterEstimateMs": 17.014589679525518,
+    "latePackets": 0,
+    "networkDropCount": 39,
+    "overflowCount": 0,
+    "p95LatencyMs": 249.0,
+    "packetLossRatePct": 1.4840182648401825,
+    "playedFrames": 766,
+    "playedPackets": 2416,
+    "playoutSmoothnessPct": 95.27363184079603,
+    "receivedPackets": 2589,
+    "reorderCount": 1595,
+    "sentFrames": 804,
+    "sentPackets": 2628,
+    "throughputKbps": 1771.7243697478993,
+    "underflowCount": 38
+  }
+}
